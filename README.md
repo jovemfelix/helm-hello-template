@@ -33,6 +33,12 @@ message: hello world!
 
 # values-override.yaml:
 message: hello helm!
+
+# change on-the-fly
+$ helm template . --set-string message=1.0.0 -f values-override.yaml
+---
+# Source: example/templates/message
+This is the most awesome message: 1.0.0
 ```
 
 
