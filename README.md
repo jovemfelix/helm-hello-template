@@ -2,23 +2,23 @@
 
 ```shell
 $ helm create hello
+$ cd hello
+$ tree .
 ```
 
-> them cleanup with:
+> them cleanup like this:
 
 ```shell
 # Folder Structure
-.
 ├── .helmignore
 ├── Chart.yaml
-├── charts
-├── example
-│   └── templates
-│       └── message
+├── README.md
 ├── templates
 │   └── message
 ├── values-override.yaml
 └── values.yaml
+
+1 directory, 6 files
 
 # Chart.yaml:
 name: example
