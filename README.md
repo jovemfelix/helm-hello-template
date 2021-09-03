@@ -79,6 +79,17 @@ version.BuildInfo{Version:"v3.6.0", GitCommit:"7f2df6467771a75f5646b7f12afb40859
 
 
 
+## Manual Execution
+
+> Example using template and openshift apply
+
+```shell
+$ helm template ./hello/ --name-template hello-pipeline  --namespace dev-hello --output-dir target
+$ oc apply -f target/hello/templates
+```
+
+
+
 # Reference
 
 * https://medium.com/@maorfr/template-everything-with-helm-48e5a32ff72d
